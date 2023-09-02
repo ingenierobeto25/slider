@@ -9,12 +9,29 @@
     <title>Jquery Slider Tutorial</title>
 </head>
 <body>
+    <div class="slider wrapper">        
+        <div >
+            <img src="img/img1.jpg" alt="" id="imageSlider">
+            <section id="textSlider">
+                <h2>La nature t'inspire?</h2>
+                <h3>Laisses-toi séduire par la beauté de la nature dans ce désert coloré</h3>
+                <p>
+                    Ce merveilleux désert comprend le CUZCO (désert rouge et ocre) où l'on trouve des animaux tels que des iguanes, des aigles, des serpents,
+                    des tortues, des lézards et une variété de cactus et de fleurs de cactus qui, pour la communauté et pour certains scientifiques, 
+                    ont des propriétés médicinales. Tu découvriras également les Hoyos (désert blanc et gris) où tu pourras profiter d'une piscine naturelle 
+                    qui te rafraîchira après la randonnée, avec une vue incomparable.              
+                </p>  
+            </section>
+        </div>     
+        <a class="prev">Avant</a>
+        <a class="next">Suivant</a>
+    </div>
 
-<div class="wrapper">
-    <div class="slider">        
+
+    <div id="sliderContent" class="invisible">
         <div class="slides">
             <img src="img/img1.jpg" alt="">
-            <section class="lieu1">
+            <section class="lieu1 buttonLieu">
                 <h2>La nature t'inspire?</h2>
                 <h3>Laisses-toi séduire par la beauté de la nature dans ce désert coloré</h3>
                 <p>
@@ -27,19 +44,20 @@
         </div>          
         <div class="slides">
             <img src="img/img2.jpg" alt="">
-            <section class="lieu2">
+            <section class="lieu2 buttonLieu">
                 <h2>Regarde l'espace</h2>
                 <h3>Vis dans la voie lactée et échappe-toi de ta réalité</h3>
                 <p>
                     Grâce aux conditions atmosphériques et à la localisation de ce désert, loin de toute pollution visuelle et auditive, tu pourras 
                     contempler une vue astronomique unique. Avec l'aide d'astronomes réputés et des dernières technologies, tu vivras une expérience 
-                    à couper le souffle.    
+                    à couper le souffle.   
+                </p> 
             </section> 
             
         </div>
         <div class="slides">
             <img src="img/img3.jpg" alt="">
-            <section class="lieu3">
+            <section class="lieu3 buttonLieu">
                 <h2>Es-tu passionné pour l'histoire?</h2>
                 <h3>Les civilisations anciennes t'apprennent leurs coutumes de l'époque</h3>
                 <p>
@@ -50,13 +68,10 @@
                     de merveilleuses statues qui hébergent les mystères des civilisations antiques.            
                 </p>     
             </section>
-
-        </div>      
-   
-    <a class="prev">Avant</a>
-    <a class="next">Suivant</a>
+        </div>
     </div>
-</div>
+
+
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/jquery-cycle2/build/jquery.cycle2.min.js"></script>
 <script src="app.js"></script>
