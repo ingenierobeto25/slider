@@ -6,15 +6,6 @@ var index = 0;
 var paragraphArray = [];
 var paragraphIndex = 0;
 
-/*
-var paragraph = document.querySelectorAll(".buttonLieu");
-//console.log(paragraph);
-//alert(paragraph);
-
-for(var i=0; i<paragraph.length; i++){
-    console.log(paragraph[i].innerHTML);
-    alert(paragraph[i].innerHTML);
-}*/
 
 
 image.each(function () {
@@ -42,9 +33,10 @@ $(".next").click(function () {
 index = index + 1;
 if (index > imageArray.length - 1) {
     index = 0;
-}
-image.attr("src", imageArray[index]);
-
+};
+    //image.attr("src", imageArray[index]);
+    $("#imageSlider").attr("src", imageArray[index]);
+    $("#textSlider")[0].innerHTML = paragraphArray[index][0].innerHTML ;
 });
 
 
